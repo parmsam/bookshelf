@@ -34,3 +34,4 @@ Here's a list of books that I have read and recommend:
 - [How to Actually Change Your Mind by Eliezer Yudkowsky](https://www.amazon.com/dp/1939311276?ref=yb_qv_ov_prnt_dp_rw)
 - [Replacing Guilt by Nate Soares]()
 - [Is this WiFi Organic by Dave Farina](https://www.amazon.com/This-Wi-Fi-Organic-Spotting-Misleading/dp/1642504157)
+- [Calling Bullshit by Carl T. Bergstrom and Jevin D. West](https://www.amazon.com/Calling-Bullshit-Skepticism-Data-Driven-World/dp/0525509186)
