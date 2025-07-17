@@ -7,23 +7,18 @@ Here's a list of books that I have read and recommend:
 - [Advanced R (2e) by Hadley Wickham](https://adv-r.hadley.nz/)
 - [Veridical Data Science by Yu and Barter](https://vdsbook.com/)
 
-
 - [Mythical Man-Month by Frederick P. Brooks Jr.](https://en.wikipedia.org/wiki/The_Mythical_Man-Month)
 - [Own Your Tech Career by Don Jones](https://www.manning.com/books/own-your-tech-career)
 - [Thinking in Bets by Annie Duke](https://www.amazon.com/Thinking-Bets-Making-Smarter-Decisions/dp/0735216355)
 - [Essentialism by Greg McKeown](https://www.amazon.com/Essentialism-Disciplined-Pursuit-Greg-McKeown/dp/0804137382)
-
 
 - [The Simple Path to Wealth by JL Collins](https://www.amazon.com/Simple-Path-Wealth-Revised-Expanded/dp/B0DQJMVM59/ref=pd_lpo_d_sccl_1/)
 - [The Little Book of Common Sense Investing by John Bogle](https://en.wikipedia.org/wiki/The_Little_Book_of_Common_Sense_Investing)
 - [Random Walk Guide to Investing by Burton Malkiel](https://www.amazon.com/Random-Walk-Guide-Investing/dp/039332639X)
 - [The Book of Wealth by Brian Kim](https://www.amazon.com/Book-Wealth-Steps-Financial-Freedom/dp/B0DSLT8SRZ/)
 
-
-
 - [The Lazarus Heist by Geoff White](https://www.amazon.com/Lazarus-Heist-Hollywood-Finance-Inside/dp/024155425X/)
 - [Tracers in the Dark by Andy Greenberg](https://www.amazon.com/Tracers-Dark-Global-Crime-Cryptocurrency/dp/0385548095)
-
 
 - [Outlive by Peter Attia](https://en.wikipedia.org/wiki/Outlive:_The_Science_and_Art_of_Longevity)
 - [Built to Move by Kelly and Juliet Starrett](https://www.amazon.com/Built-Move-Essential-Habits-Freely/dp/0593534808)
