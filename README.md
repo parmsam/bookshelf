@@ -26,3 +26,4 @@ Here's a list of books that I have read and recommend:
 - [Replacing Guilt by Nate Soares]()
 - [Is this WiFi Organic by Dave Farina](https://www.amazon.com/This-Wi-Fi-Organic-Spotting-Misleading/dp/1642504157)
 - [Calling Bullshit by Carl T. Bergstrom and Jevin D. West](https://www.amazon.com/Calling-Bullshit-Skepticism-Data-Driven-World/dp/0525509186)
+- [Hackers & Painters by Paul Graham](https://en.wikipedia.org/wiki/Hackers_%26_Painters)
