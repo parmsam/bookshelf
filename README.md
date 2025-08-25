@@ -5,7 +5,7 @@ Here's a list of books that I have read and recommend:
 - [R for Data Science (2e) by Hadley Wickham](https://r4ds.hadley.nz/)
 - [Mastering Shiny by Hadley Wickham](https://mastering-shiny.org/)
 - [Advanced R (2e) by Hadley Wickham](https://adv-r.hadley.nz/)
-- [Building reproducible analytical pipelines with R](https://raps-with-r.dev/)
+- [Building reproducible analytical pipelines with R by Bruno Rodrigues](https://raps-with-r.dev/)
 - [Veridical Data Science by Yu and Barter](https://vdsbook.com/)
 - [Mythical Man-Month by Frederick P. Brooks Jr.](https://en.wikipedia.org/wiki/The_Mythical_Man-Month)
 - [Own Your Tech Career by Don Jones](https://www.manning.com/books/own-your-tech-career)
