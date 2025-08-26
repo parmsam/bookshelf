@@ -29,3 +29,5 @@ Here's a list of books that I have read and recommend:
 - [Calling Bullshit by Carl T. Bergstrom and Jevin D. West](https://www.amazon.com/Calling-Bullshit-Skepticism-Data-Driven-World/dp/0525509186)
 - [Hackers & Painters by Paul Graham](https://en.wikipedia.org/wiki/Hackers_%26_Painters)
 - [Lying for Money by Dan Davies](https://www.simonandschuster.com/books/Lying-for-Money/Dan-Davies/9781982114947)
+- [Just Keep Buying by Nick Maggiulli](https://www.amazon.com/Just-Keep-Buying-Proven-wealth/dp/0857199250)
+- [The Wealth Ladder by Nick Maggiulli](https://www.amazon.com/Wealth-Ladder-Proven-Strategies-Financial/dp/0593854039)
