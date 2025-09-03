@@ -31,3 +31,4 @@ Here's a list of books that I have read and recommend:
 - [Lying for Money by Dan Davies](https://www.simonandschuster.com/books/Lying-for-Money/Dan-Davies/9781982114947)
 - [Just Keep Buying by Nick Maggiulli](https://www.amazon.com/Just-Keep-Buying-Proven-wealth/dp/0857199250)
 - [The Wealth Ladder by Nick Maggiulli](https://www.amazon.com/Wealth-Ladder-Proven-Strategies-Financial/dp/0593854039)
+- [The Tainted Cup by Robert Jackson Bennett](https://en.wikipedia.org/wiki/The_Tainted_Cup)
