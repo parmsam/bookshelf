@@ -8,6 +8,7 @@ Here's a list of books that I have read and recommend:
 - [Building reproducible analytical pipelines with R by Bruno Rodrigues](https://raps-with-r.dev/)
 - [Veridical Data Science by Yu and Barter](https://vdsbook.com/)
 - [Mythical Man-Month by Frederick P. Brooks Jr.](https://en.wikipedia.org/wiki/The_Mythical_Man-Month)
+- [Build a Career in Data Science by Robinson and Nolis](https://www.manning.com/books/build-a-career-in-data-science)
 - [Own Your Tech Career by Don Jones](https://www.manning.com/books/own-your-tech-career)
 - [Thinking in Bets by Annie Duke](https://www.amazon.com/Thinking-Bets-Making-Smarter-Decisions/dp/0735216355)
 - [Essentialism by Greg McKeown](https://www.amazon.com/Essentialism-Disciplined-Pursuit-Greg-McKeown/dp/0804137382)
