@@ -35,3 +35,4 @@ Here's a list of books that I have read and recommend:
 - [The Tainted Cup by Robert Jackson Bennett](https://en.wikipedia.org/wiki/The_Tainted_Cup)
 - [A Mathematician's Lament by Paul Lockhart](https://en.wikipedia.org/wiki/A_Mathematician%27s_Lament)
 - [AI Snake Oil by Arvind Narayanan](https://en.wikipedia.org/wiki/AI_Snake_Oil)
+- [If Anyone Builds It, Everyone Dies by Eliezer Yudkowsky and Nate Soares](https://en.wikipedia.org/wiki/If_Anyone_Builds_It,_Everyone_Dies)
