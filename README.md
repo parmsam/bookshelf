@@ -37,4 +37,5 @@ Here's a list of books that I have read and recommend:
 - [AI Snake Oil by Arvind Narayanan](https://en.wikipedia.org/wiki/AI_Snake_Oil)
 - [If Anyone Builds It, Everyone Dies by Eliezer Yudkowsky and Nate Soares](https://en.wikipedia.org/wiki/If_Anyone_Builds_It,_Everyone_Dies)
 - [How to Solve It by George Pólya](https://en.wikipedia.org/wiki/How_to_Solve_It)
-- [The Fourth Consort](https://us.macmillan.com/books/9781250286338/thefourthconsort/)
+- [The Fourth Consor by Edward Ashton](https://us.macmillan.com/books/9781250286338/thefourthconsort/)
+- [Co-Intelligence: Living and Working with AI by Ethan Mollick](https://www.penguinrandomhouse.com/books/741805/co-intelligence-by-ethan-mollick/)
