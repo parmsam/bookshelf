@@ -39,3 +39,4 @@ Here's a list of books that I have read and recommend:
 - [How to Solve It by George Pólya](https://en.wikipedia.org/wiki/How_to_Solve_It)
 - [The Fourth Consor by Edward Ashton](https://us.macmillan.com/books/9781250286338/thefourthconsort/)
 - [Co-Intelligence: Living and Working with AI by Ethan Mollick](https://www.penguinrandomhouse.com/books/741805/co-intelligence-by-ethan-mollick/)
+- [A Drop of Corruption by Robert Jackson Bennett](https://en.wikipedia.org/wiki/A_Drop_of_Corruption)
