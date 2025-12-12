@@ -42,3 +42,4 @@ Here's a list of books that I have read and recommend:
 - [A Drop of Corruption by Robert Jackson Bennett](https://en.wikipedia.org/wiki/A_Drop_of_Corruption)
 - [How to Think About Money by Jonathan Clements](https://www.amazon.com/Think-About-Money-Jonathan-Clements/dp/1523770813)
 - [The AI-Driven Leader by Geoff Woods](https://www.amazon.com/AI-Driven-Leader-Harnessing-Smarter-Decisions/dp/B0DB8QL3ZK)
+- [The Machine Stops by E.M. Forster](https://en.wikipedia.org/wiki/The_Machine_Stops)
