@@ -72,6 +72,7 @@ def generate_html(books: list[dict]) -> str:
                         Button("Compact", cls="view-btn", data_view="compact"),
                         cls="view-toggles"
                     ),
+                    Button("Reverse", cls="reverse-btn", id="reverse-btn"),
                     cls="controls"
                 ),
                 P(Span(str(len(books)), id="count"), " books", cls="book-count"),

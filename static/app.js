@@ -1,6 +1,7 @@
 // Books data is injected as a global variable in the HTML
 
 let currentView = localStorage.getItem('bookshelf-view') || 'card';
+let isReversed = localStorage.getItem('bookshelf-reversed') === 'true';
 let searchTimeout = null;
 
 function escapeHtml(text) {
@@ -56,12 +57,22 @@ function renderBooks(filteredBooks) {
 }
 
 function filterBooks(query) {
-    if (!query) return books;
-    const lower = query.toLowerCase();
-    return books.filter(book =>
-        book.title.toLowerCase().includes(lower) ||
-        book.author.toLowerCase().includes(lower)
-    );
+    let result = books;
+    if (query) {
+        const lower = query.toLowerCase();
+        result = books.filter(book =>
+            book.title.toLowerCase().includes(lower) ||
+            book.author.toLowerCase().includes(lower)
+        );
+    }
+    return isReversed ? [...result].reverse() : result;
+}
+
+function toggleReverse() {
+    isReversed = !isReversed;
+    localStorage.setItem('bookshelf-reversed', isReversed);
+    const query = document.getElementById('search').value;
+    renderBooks(filterBooks(query));
 }
 
 function setView(view) {
@@ -91,5 +102,7 @@ document.getElementById('search').addEventListener('input', (e) => {
 document.querySelectorAll('.view-btn').forEach(btn => {
     btn.addEventListener('click', () => setView(btn.dataset.view));
 });
+
+document.getElementById('reverse-btn').addEventListener('click', toggleReverse);
 
 setView(currentView);
