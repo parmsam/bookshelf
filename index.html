@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 1.5rem;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.search-box {
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.search-box input:focus {
+    border-color: #4a6fa5;
+}
+
+.view-toggles {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.view-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    border: 2px solid #e0e0e0;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.view-btn:hover {
+    border-color: #4a6fa5;
+}
+
+.view-btn.active {
+    background: #4a6fa5;
+    border-color: #4a6fa5;
+    color: white;
+}
+
+.book-count {
+    color: #666;
+    font-size: 0.875rem;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.book-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.book-card .title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+}
+
+.book-card .author {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.book-card .link {
+    display: inline-block;
+    color: #4a6fa5;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.book-card .link:hover {
+    text-decoration: underline;
+}
+
+.books-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.books-list .book-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+}
+
+.books-list .book-info {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.books-list .title {
+    margin-bottom: 0;
+}
+
+.books-list .author {
+    margin-bottom: 0;
+}
+
+.books-compact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.books-compact .book-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+}
+
+.books-compact .title {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.books-compact .author {
+    font-size: 0.85rem;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+.books-compact .link {
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.no-results {
+    text-align: center;
+    padding: 3rem;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    .search-box {
+        width: 100%;
+        max-width: none;
+    }
+
+    .books-list .book-card,
+    .books-compact .book-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .books-list .book-info {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .books-compact .link {
+        margin-left: 0;
+    }
+}
+</style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Bookshelf</h1>
+      </header>
+      <div class="controls">
+        <div class="search-box">
+          <input type="text" placeholder="Search by title or author..." autocomplete="off" id="search" name="search">
+        </div>
+        <div class="view-toggles">
+<button data-view="card" class="view-btn active">Card</button><button data-view="list" class="view-btn">List</button><button data-view="compact" class="view-btn">Compact</button>        </div>
+      </div>
+      <p class="book-count">
+<span id="count">47</span> books      </p>
+      <div id="books" class="books-grid"></div>
+      <div id="no-results" class="no-results hidden">No books found matching your search.</div>
+<script>
+const books = [{"title": "R for Data Science (2e)", "author": "Hadley Wickham", "url": "https://r4ds.hadley.nz/"}, {"title": "Mastering Shiny", "author": "Hadley Wickham", "url": "https://mastering-shiny.org/"}, {"title": "Advanced R (2e)", "author": "Hadley Wickham", "url": "https://adv-r.hadley.nz/"}, {"title": "Building reproducible analytical pipelines with R", "author": "Bruno Rodrigues", "url": "https://raps-with-r.dev/"}, {"title": "Veridical Data Science", "author": "Yu and Barter", "url": "https://vdsbook.com/"}, {"title": "Mythical Man-Month", "author": "Frederick P. Brooks Jr.", "url": "https://en.wikipedia.org/wiki/The_Mythical_Man-Month"}, {"title": "Build a Career in Data Science", "author": "Robinson and Nolis", "url": "https://www.manning.com/books/build-a-career-in-data-science"}, {"title": "Own Your Tech Career", "author": "Don Jones", "url": "https://www.manning.com/books/own-your-tech-career"}, {"title": "Thinking in Bets", "author": "Annie Duke", "url": "https://www.amazon.com/Thinking-Bets-Making-Smarter-Decisions/dp/0735216355"}, {"title": "Essentialism", "author": "Greg McKeown", "url": "https://www.amazon.com/Essentialism-Disciplined-Pursuit-Greg-McKeown/dp/0804137382"}, {"title": "The Simple Path to Wealth", "author": "JL Collins", "url": "https://www.amazon.com/Simple-Path-Wealth-Revised-Expanded/dp/B0DQJMVM59/ref=pd_lpo_d_sccl_1/"}, {"title": "The Little Book of Common Sense Investing", "author": "John Bogle", "url": "https://en.wikipedia.org/wiki/The_Little_Book_of_Common_Sense_Investing"}, {"title": "Random Walk Guide to Investing", "author": "Burton Malkiel", "url": "https://www.amazon.com/Random-Walk-Guide-Investing/dp/039332639X"}, {"title": "The Book of Wealth", "author": "Brian Kim", "url": "https://www.amazon.com/Book-Wealth-Steps-Financial-Freedom/dp/B0DSLT8SRZ/"}, {"title": "The Lazarus Heist", "author": "Geoff White", "url": "https://www.amazon.com/Lazarus-Heist-Hollywood-Finance-Inside/dp/024155425X/"}, {"title": "Tracers in the Dark", "author": "Andy Greenberg", "url": "https://www.amazon.com/Tracers-Dark-Global-Crime-Cryptocurrency/dp/0385548095"}, {"title": "Outlive", "author": "Peter Attia", "url": "https://en.wikipedia.org/wiki/Outlive:_The_Science_and_Art_of_Longevity"}, {"title": "Built to Move", "author": "Kelly and Juliet Starrett", "url": "https://www.amazon.com/Built-Move-Essential-Habits-Freely/dp/0593534808"}, {"title": "When Violence is the Answer", "author": "Tim Larkin", "url": "https://www.amazon.com/When-Violence-Answer-Learning-Takes/dp/0316354643"}, {"title": "Art of Learning", "author": "Josh Waitzkin", "url": "https://www.amazon.com/Art-Learning-Journey-Optimal-Performance/dp/0743277465"}, {"title": "Comfort Crisis", "author": "Michael Easter", "url": "https://www.amazon.com/dp/0593138767"}, {"title": "Rationality from AI to Zombies", "author": "Eliezer Yudkowsky", "url": "https://www.amazon.com/Map-Territory-Rationality-Zombies-Book-ebook/dp/B07LDF7J3Q"}, {"title": "How to Actually Change Your Mind", "author": "Eliezer Yudkowsky", "url": "https://www.amazon.com/dp/1939311276?ref=yb_qv_ov_prnt_dp_rw"}, {"title": "Replacing Guilt", "author": "Nate Soares", "url": "https://mindingourway.com/guilt/"}, {"title": "Is this WiFi Organic", "author": "Dave Farina", "url": "https://www.amazon.com/This-Wi-Fi-Organic-Spotting-Misleading/dp/1642504157"}, {"title": "Calling Bullshit", "author": "Carl T. Bergstrom and Jevin D. West", "url": "https://www.amazon.com/Calling-Bullshit-Skepticism-Data-Driven-World/dp/0525509186"}, {"title": "Hackers & Painters", "author": "Paul Graham", "url": "https://en.wikipedia.org/wiki/Hackers_%26_Painters"}, {"title": "Lying for Money", "author": "Dan Davies", "url": "https://www.simonandschuster.com/books/Lying-for-Money/Dan-Davies/9781982114947"}, {"title": "Just Keep Buying", "author": "Nick Maggiulli", "url": "https://www.amazon.com/Just-Keep-Buying-Proven-wealth/dp/0857199250"}, {"title": "The Wealth Ladder", "author": "Nick Maggiulli", "url": "https://www.amazon.com/Wealth-Ladder-Proven-Strategies-Financial/dp/0593854039"}, {"title": "The Tainted Cup", "author": "Robert Jackson Bennett", "url": "https://en.wikipedia.org/wiki/The_Tainted_Cup"}, {"title": "A Mathematician's Lament", "author": "Paul Lockhart", "url": "https://en.wikipedia.org/wiki/A_Mathematician%27s_Lament"}, {"title": "AI Snake Oil", "author": "Arvind Narayanan", "url": "https://en.wikipedia.org/wiki/AI_Snake_Oil"}, {"title": "If Anyone Builds It, Everyone Dies", "author": "Eliezer Yudkowsky and Nate Soares", "url": "https://en.wikipedia.org/wiki/If_Anyone_Builds_It,_Everyone_Dies"}, {"title": "How to Solve It", "author": "George P\u00f3lya", "url": "https://en.wikipedia.org/wiki/How_to_Solve_It"}, {"title": "The Fourth Consor", "author": "Edward Ashton", "url": "https://us.macmillan.com/books/9781250286338/thefourthconsort/"}, {"title": "Co-Intelligence: Living and Working with AI", "author": "Ethan Mollick", "url": "https://www.penguinrandomhouse.com/books/741805/co-intelligence-by-ethan-mollick/"}, {"title": "A Drop of Corruption", "author": "Robert Jackson Bennett", "url": "https://en.wikipedia.org/wiki/A_Drop_of_Corruption"}, {"title": "How to Think About Money", "author": "Jonathan Clements", "url": "https://www.amazon.com/Think-About-Money-Jonathan-Clements/dp/1523770813"}, {"title": "Kill it with Fire", "author": "Marianne Bellotti", "url": "https://www.amazon.com/Kill-Fire-Manage-Computer-Systems/dp/1718501188"}, {"title": "The AI-Driven Leader", "author": "Geoff Woods", "url": "https://www.amazon.com/AI-Driven-Leader-Harnessing-Smarter-Decisions/dp/B0DB8QL3ZK"}, {"title": "The Machine Stops", "author": "E.M. Forster", "url": "https://en.wikipedia.org/wiki/The_Machine_Stops"}, {"title": "The Lean Startup", "author": "Eric Ries", "url": "https://en.wikipedia.org/wiki/The_Lean_Startup"}, {"title": "Atomic Habits", "author": "James Clear", "url": "https://en.wikipedia.org/wiki/Atomic_Habits"}, {"title": "The Triple Package", "author": "Amy Chua and Jed Rubenfeld", "url": "https://en.wikipedia.org/wiki/The_Triple_Package"}, {"title": "HBR Guide to Being a Great Boss", "author": "Unknown", "url": "https://www.amazon.com/HBR-Guide-Being-Great-Boss/dp/1647822343"}, {"title": "Managing Humans", "author": "Michael Lopp", "url": "https://www.amazon.com/Managing-Humans-Humorous-Software-Engineering/dp/1484271157/"}];
+
+let currentView = localStorage.getItem('bookshelf-view') || 'card';
+let searchTimeout = null;
+
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+function renderBooks(filteredBooks) {
+    const container = document.getElementById('books');
+    const noResults = document.getElementById('no-results');
+    const countEl = document.getElementById('count');
+
+    countEl.textContent = filteredBooks.length;
+
+    if (filteredBooks.length === 0) {
+        container.innerHTML = '';
+        noResults.classList.remove('hidden');
+        return;
+    }
+
+    noResults.classList.add('hidden');
+
+    container.innerHTML = filteredBooks.map(book => {
+        if (currentView === 'card') {
+            return `
+                <div class="book-card">
+                    <div class="title">${escapeHtml(book.title)}</div>
+                    <div class="author">${escapeHtml(book.author)}</div>
+                    <a href="${escapeHtml(book.url)}" class="link" target="_blank" rel="noopener">View Resource &rarr;</a>
+                </div>
+            `;
+        } else if (currentView === 'list') {
+            return `
+                <div class="book-card">
+                    <div class="book-info">
+                        <div class="title">${escapeHtml(book.title)}</div>
+                        <div class="author">${escapeHtml(book.author)}</div>
+                    </div>
+                    <a href="${escapeHtml(book.url)}" class="link" target="_blank" rel="noopener">View &rarr;</a>
+                </div>
+            `;
+        } else {
+            return `
+                <div class="book-card">
+                    <div class="title">${escapeHtml(book.title)}</div>
+                    <div class="author">${escapeHtml(book.author)}</div>
+                    <a href="${escapeHtml(book.url)}" class="link" target="_blank" rel="noopener">View</a>
+                </div>
+            `;
+        }
+    }).join('');
+}
+
+function filterBooks(query) {
+    if (!query) return books;
+    const lower = query.toLowerCase();
+    return books.filter(book =>
+        book.title.toLowerCase().includes(lower) ||
+        book.author.toLowerCase().includes(lower)
+    );
+}
+
+function setView(view) {
+    currentView = view;
+    localStorage.setItem('bookshelf-view', view);
+
+    const container = document.getElementById('books');
+    container.className = view === 'card' ? 'books-grid' :
+                          view === 'list' ? 'books-list' : 'books-compact';
+
+    document.querySelectorAll('.view-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.view === view);
+    });
+
+    const query = document.getElementById('search').value;
+    renderBooks(filterBooks(query));
+}
+
+document.getElementById('search').addEventListener('input', (e) => {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+        renderBooks(filterBooks(e.target.value));
+    }, 150);
+});
+
+document.querySelectorAll('.view-btn').forEach(btn => {
+    btn.addEventListener('click', () => setView(btn.dataset.view));
+});
+
+setView(currentView);
+</script>    </div>
+  </body>
+</html>
