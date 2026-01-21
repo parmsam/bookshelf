@@ -47,5 +47,5 @@ Here's a list of books that I have read and recommend:
 - [The Lean Startup by Eric Ries](https://en.wikipedia.org/wiki/The_Lean_Startup)
 - [Atomic Habits by James Clear](https://en.wikipedia.org/wiki/Atomic_Habits)
 - [The Triple Package by Amy Chua and Jed Rubenfeld](https://en.wikipedia.org/wiki/The_Triple_Package)
-- [HBR Guide to Being a Great Boss](https://www.amazon.com/HBR-Guide-Being-Great-Boss/dp/1647822343)
+- [HBR Guide to Being a Great Boss by Harvard Business Review](https://www.amazon.com/HBR-Guide-Being-Great-Boss/dp/1647822343)
 - [Managing Humans by Michael Lopp](https://www.amazon.com/Managing-Humans-Humorous-Software-Engineering/dp/1484271157/)
