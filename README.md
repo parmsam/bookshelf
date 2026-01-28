@@ -2,50 +2,50 @@
 
 Here's a list of books that I have read and recommend:
 
-- [R for Data Science (2e) by Hadley Wickham](https://r4ds.hadley.nz/)
-- [Mastering Shiny by Hadley Wickham](https://mastering-shiny.org/)
-- [Advanced R (2e) by Hadley Wickham](https://adv-r.hadley.nz/)
-- [Building reproducible analytical pipelines with R by Bruno Rodrigues](https://raps-with-r.dev/)
-- [Veridical Data Science by Yu and Barter](https://vdsbook.com/)
-- [Mythical Man-Month by Frederick P. Brooks Jr.](https://en.wikipedia.org/wiki/The_Mythical_Man-Month)
-- [Build a Career in Data Science by Robinson and Nolis](https://www.manning.com/books/build-a-career-in-data-science)
-- [Own Your Tech Career by Don Jones](https://www.manning.com/books/own-your-tech-career)
-- [Thinking in Bets by Annie Duke](https://www.amazon.com/Thinking-Bets-Making-Smarter-Decisions/dp/0735216355)
-- [Essentialism by Greg McKeown](https://www.amazon.com/Essentialism-Disciplined-Pursuit-Greg-McKeown/dp/0804137382)
-- [The Simple Path to Wealth by JL Collins](https://www.amazon.com/Simple-Path-Wealth-Revised-Expanded/dp/B0DQJMVM59/ref=pd_lpo_d_sccl_1/)
-- [The Little Book of Common Sense Investing by John Bogle](https://en.wikipedia.org/wiki/The_Little_Book_of_Common_Sense_Investing)
-- [Random Walk Guide to Investing by Burton Malkiel](https://www.amazon.com/Random-Walk-Guide-Investing/dp/039332639X)
-- [The Book of Wealth by Brian Kim](https://www.amazon.com/Book-Wealth-Steps-Financial-Freedom/dp/B0DSLT8SRZ/)
-- [The Lazarus Heist by Geoff White](https://www.amazon.com/Lazarus-Heist-Hollywood-Finance-Inside/dp/024155425X/)
-- [Tracers in the Dark by Andy Greenberg](https://www.amazon.com/Tracers-Dark-Global-Crime-Cryptocurrency/dp/0385548095)
-- [Outlive by Peter Attia](https://en.wikipedia.org/wiki/Outlive:_The_Science_and_Art_of_Longevity)
-- [Built to Move by Kelly and Juliet Starrett](https://www.amazon.com/Built-Move-Essential-Habits-Freely/dp/0593534808)
-- [When Violence is the Answer by Tim Larkin](https://www.amazon.com/When-Violence-Answer-Learning-Takes/dp/0316354643)
-- [Art of Learning by Josh Waitzkin](https://www.amazon.com/Art-Learning-Journey-Optimal-Performance/dp/0743277465)
-- [Comfort Crisis by Michael Easter](https://www.amazon.com/dp/0593138767)
-- [Rationality from AI to Zombies by Eliezer Yudkowsky](https://www.amazon.com/Map-Territory-Rationality-Zombies-Book-ebook/dp/B07LDF7J3Q)
-- [How to Actually Change Your Mind by Eliezer Yudkowsky](https://www.amazon.com/dp/1939311276?ref=yb_qv_ov_prnt_dp_rw)
-- [Replacing Guilt by Nate Soares](https://mindingourway.com/guilt/)
-- [Is this WiFi Organic by Dave Farina](https://www.amazon.com/This-Wi-Fi-Organic-Spotting-Misleading/dp/1642504157)
-- [Calling Bullshit by Carl T. Bergstrom and Jevin D. West](https://www.amazon.com/Calling-Bullshit-Skepticism-Data-Driven-World/dp/0525509186)
-- [Hackers & Painters by Paul Graham](https://en.wikipedia.org/wiki/Hackers_%26_Painters)
-- [Lying for Money by Dan Davies](https://www.simonandschuster.com/books/Lying-for-Money/Dan-Davies/9781982114947)
-- [Just Keep Buying by Nick Maggiulli](https://www.amazon.com/Just-Keep-Buying-Proven-wealth/dp/0857199250)
-- [The Wealth Ladder by Nick Maggiulli](https://www.amazon.com/Wealth-Ladder-Proven-Strategies-Financial/dp/0593854039)
-- [The Tainted Cup by Robert Jackson Bennett](https://en.wikipedia.org/wiki/The_Tainted_Cup)
-- [A Mathematician's Lament by Paul Lockhart](https://en.wikipedia.org/wiki/A_Mathematician%27s_Lament)
-- [AI Snake Oil by Arvind Narayanan](https://en.wikipedia.org/wiki/AI_Snake_Oil)
-- [If Anyone Builds It, Everyone Dies by Eliezer Yudkowsky and Nate Soares](https://en.wikipedia.org/wiki/If_Anyone_Builds_It,_Everyone_Dies)
-- [How to Solve It by George Pólya](https://en.wikipedia.org/wiki/How_to_Solve_It)
-- [The Fourth Consor by Edward Ashton](https://us.macmillan.com/books/9781250286338/thefourthconsort/)
-- [Co-Intelligence: Living and Working with AI by Ethan Mollick](https://www.penguinrandomhouse.com/books/741805/co-intelligence-by-ethan-mollick/)
-- [A Drop of Corruption by Robert Jackson Bennett](https://en.wikipedia.org/wiki/A_Drop_of_Corruption)
-- [How to Think About Money by Jonathan Clements](https://www.amazon.com/Think-About-Money-Jonathan-Clements/dp/1523770813)
-- [Kill it with Fire by Marianne Bellotti](https://www.amazon.com/Kill-Fire-Manage-Computer-Systems/dp/1718501188)
-- [The AI-Driven Leader by Geoff Woods](https://www.amazon.com/AI-Driven-Leader-Harnessing-Smarter-Decisions/dp/B0DB8QL3ZK)
-- [The Machine Stops by E.M. Forster](https://en.wikipedia.org/wiki/The_Machine_Stops)
-- [The Lean Startup by Eric Ries](https://en.wikipedia.org/wiki/The_Lean_Startup)
-- [Atomic Habits by James Clear](https://en.wikipedia.org/wiki/Atomic_Habits)
-- [The Triple Package by Amy Chua and Jed Rubenfeld](https://en.wikipedia.org/wiki/The_Triple_Package)
-- [HBR Guide to Being a Great Boss by Harvard Business Review](https://www.amazon.com/HBR-Guide-Being-Great-Boss/dp/1647822343)
-- [Managing Humans by Michael Lopp](https://www.amazon.com/Managing-Humans-Humorous-Software-Engineering/dp/1484271157/)
+- <a href="https://r4ds.hadley.nz/">R for Data Science (2e) by Hadley Wickham</a> #R #DataScience #Programming
+- <a href="https://mastering-shiny.org/">Mastering Shiny by Hadley Wickham</a> #R #WebDevelopment #Shiny
+- <a href="https://adv-r.hadley.nz/">Advanced R (2e) by Hadley Wickham</a> #R #Programming #Advanced
+- <a href="https://raps-with-r.dev/">Building reproducible analytical pipelines with R by Bruno Rodrigues</a> #R #DataScience #DevOps
+- <a href="https://vdsbook.com/">Veridical Data Science by Yu and Barter</a> #DataScience #Statistics #Research
+- <a href="https://en.wikipedia.org/wiki/The_Mythical_Man-Month">Mythical Man-Month by Frederick P. Brooks Jr.</a> #SoftwareEngineering #ProjectManagement #Classic
+- <a href="https://www.manning.com/books/build-a-career-in-data-science">Build a Career in Data Science by Robinson and Nolis</a> #DataScience #Career #Professional
+- <a href="https://www.manning.com/books/own-your-tech-career">Own Your Tech Career by Don Jones</a> #Career #Technology #Professional
+- <a href="https://www.amazon.com/Thinking-Bets-Making-Smarter-Decisions/dp/0735216355">Thinking in Bets by Annie Duke</a> #DecisionMaking #Psychology #Strategy
+- <a href="https://www.amazon.com/Essentialism-Disciplined-Pursuit-Greg-McKeown/dp/0804137382">Essentialism by Greg McKeown</a> #Productivity #SelfHelp #Minimalism
+- <a href="https://www.amazon.com/Simple-Path-Wealth-Revised-Expanded/dp/B0DQJMVM59/ref=pd_lpo_d_sccl_1/">The Simple Path to Wealth by JL Collins</a> #Finance #Investing #PersonalFinance
+- <a href="https://en.wikipedia.org/wiki/The_Little_Book_of_Common_Sense_Investing">The Little Book of Common Sense Investing by John Bogle</a> #Finance #Investing #IndexFunds
+- <a href="https://www.amazon.com/Random-Walk-Guide-Investing/dp/039332639X">Random Walk Guide to Investing by Burton Malkiel</a> #Finance #Investing #Strategy
+- <a href="https://www.amazon.com/Book-Wealth-Steps-Financial-Freedom/dp/B0DSLT8SRZ/">The Book of Wealth by Brian Kim</a> #Finance #PersonalFinance #Wealth
+- <a href="https://www.amazon.com/Lazarus-Heist-Hollywood-Finance-Inside/dp/024155425X/">The Lazarus Heist by Geoff White</a> #Cybersecurity #TrueCrime #Technology
+- <a href="https://www.amazon.com/Tracers-Dark-Global-Crime-Cryptocurrency/dp/0385548095">Tracers in the Dark by Andy Greenberg</a> #Cybersecurity #Cryptocurrency #TrueCrime
+- <a href="https://en.wikipedia.org/wiki/Outlive:_The_Science_and_Art_of_Longevity">Outlive by Peter Attia</a> #Health #Longevity #Science
+- <a href="https://www.amazon.com/Built-Move-Essential-Habits-Freely/dp/0593534808">Built to Move by Kelly and Juliet Starrett</a> #Health #Fitness #Movement
+- <a href="https://www.amazon.com/When-Violence-Answer-Learning-Takes/dp/0316354643">When Violence is the Answer by Tim Larkin</a> #SelfDefense #Safety #Strategy
+- <a href="https://www.amazon.com/Art-Learning-Journey-Optimal-Performance/dp/0743277465">Art of Learning by Josh Waitzkin</a> #Learning #Performance #SelfHelp
+- <a href="https://www.amazon.com/dp/0593138767">Comfort Crisis by Michael Easter</a> #Health #Psychology #SelfHelp
+- <a href="https://www.amazon.com/Map-Territory-Rationality-Zombies-Book-ebook/dp/B07LDF7J3Q">Rationality from AI to Zombies by Eliezer Yudkowsky</a> #Rationality #Philosophy #AI
+- <a href="https://www.amazon.com/dp/1939311276?ref=yb_qv_ov_prnt_dp_rw">How to Actually Change Your Mind by Eliezer Yudkowsky</a> #Rationality #Philosophy #Psychology
+- <a href="https://mindingourway.com/guilt/">Replacing Guilt by Nate Soares</a> #Philosophy #Psychology #SelfHelp
+- <a href="https://www.amazon.com/This-Wi-Fi-Organic-Spotting-Misleading/dp/1642504157">Is this WiFi Organic by Dave Farina</a> #Science #CriticalThinking #Skepticism
+- <a href="https://www.amazon.com/Calling-Bullshit-Skepticism-Data-Driven-World/dp/0525509186">Calling Bullshit by Carl T. Bergstrom and Jevin D. West</a> #CriticalThinking #DataScience #Skepticism
+- <a href="https://en.wikipedia.org/wiki/Hackers_%26_Painters">Hackers & Painters by Paul Graham</a> #Programming #Startups #Technology
+- <a href="https://www.simonandschuster.com/books/Lying-for-Money/Dan-Davies/9781982114947">Lying for Money by Dan Davies</a> #Finance #Fraud #TrueCrime
+- <a href="https://www.amazon.com/Just-Keep-Buying-Proven-wealth/dp/0857199250">Just Keep Buying by Nick Maggiulli</a> #Finance #Investing #PersonalFinance
+- <a href="https://www.amazon.com/Wealth-Ladder-Proven-Strategies-Financial/dp/0593854039">The Wealth Ladder by Nick Maggiulli</a> #Finance #Investing #PersonalFinance
+- <a href="https://en.wikipedia.org/wiki/The_Tainted_Cup">The Tainted Cup by Robert Jackson Bennett</a> #Fiction #Fantasy #Mystery
+- <a href="https://en.wikipedia.org/wiki/A_Mathematician%27s_Lament">A Mathematician's Lament by Paul Lockhart</a> #Mathematics #Education #Philosophy
+- <a href="https://en.wikipedia.org/wiki/AI_Snake_Oil">AI Snake Oil by Arvind Narayanan</a> #AI #Technology #CriticalThinking
+- <a href="https://en.wikipedia.org/wiki/If_Anyone_Builds_It,_Everyone_Dies">If Anyone Builds It, Everyone Dies by Eliezer Yudkowsky and Nate Soares</a> #AI #Safety #Philosophy
+- <a href="https://en.wikipedia.org/wiki/How_to_Solve_It">How to Solve It by George Pólya</a> #Mathematics #ProblemSolving #Education
+- <a href="https://us.macmillan.com/books/9781250286338/thefourthconsort/">The Fourth Consor by Edward Ashton</a> #Fiction #SciFi #Mystery
+- <a href="https://www.penguinrandomhouse.com/books/741805/co-intelligence-by-ethan-mollick/">Co-Intelligence: Living and Working with AI by Ethan Mollick</a> #AI #Technology #Business
+- <a href="https://en.wikipedia.org/wiki/A_Drop_of_Corruption">A Drop of Corruption by Robert Jackson Bennett</a> #Fiction #Fantasy #Mystery
+- <a href="https://www.amazon.com/Think-About-Money-Jonathan-Clements/dp/1523770813">How to Think About Money by Jonathan Clements</a> #Finance #PersonalFinance #Philosophy
+- <a href="https://www.amazon.com/Kill-Fire-Manage-Computer-Systems/dp/1718501188">Kill it with Fire by Marianne Bellotti</a> #SoftwareEngineering #Technology #Legacy
+- <a href="https://www.amazon.com/AI-Driven-Leader-Harnessing-Smarter-Decisions/dp/B0DB8QL3ZK">The AI-Driven Leader by Geoff Woods</a> #AI #Leadership #Business
+- <a href="https://en.wikipedia.org/wiki/The_Machine_Stops">The Machine Stops by E.M. Forster</a> #Fiction #SciFi #Classic
+- <a href="https://en.wikipedia.org/wiki/The_Lean_Startup">The Lean Startup by Eric Ries</a> #Business #Innovation #Startups
+- <a href="https://en.wikipedia.org/wiki/Atomic_Habits">Atomic Habits by James Clear</a> #SelfHelp #Productivity #Psychology
+- <a href="https://en.wikipedia.org/wiki/The_Triple_Package">The Triple Package by Amy Chua and Jed Rubenfeld</a> #Psychology #Sociology #Success
+- <a href="https://www.amazon.com/HBR-Guide-Being-Great-Boss/dp/1647822343">HBR Guide to Being a Great Boss by Harvard Business Review</a> #Leadership #Management #Business
+- <a href="https://www.amazon.com/Managing-Humans-Humorous-Software-Engineering/dp/1484271157/">Managing Humans by Michael Lopp</a> #Leadership #Management #SoftwareEngineering
