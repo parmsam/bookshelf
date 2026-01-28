@@ -26,11 +26,16 @@ function renderBooks(filteredBooks) {
     noResults.classList.add('hidden');
 
     container.innerHTML = filteredBooks.map(book => {
+        const tagsHtml = book.tags && book.tags.length > 0 
+            ? `<div class="tags">${book.tags.map(tag => `<span class="tag">#${escapeHtml(tag)}</span>`).join('')}</div>`
+            : '';
+        
         if (currentView === 'card') {
             return `
                 <div class="book-card">
                     <div class="title">${escapeHtml(book.title)}</div>
                     <div class="author">${escapeHtml(book.author)}</div>
+                    ${tagsHtml}
                     <a href="${escapeHtml(book.url)}" class="link" target="_blank" rel="noopener">View Resource &rarr;</a>
                 </div>
             `;
@@ -40,6 +45,7 @@ function renderBooks(filteredBooks) {
                     <div class="book-info">
                         <div class="title">${escapeHtml(book.title)}</div>
                         <div class="author">${escapeHtml(book.author)}</div>
+                        ${tagsHtml}
                     </div>
                     <a href="${escapeHtml(book.url)}" class="link" target="_blank" rel="noopener">View &rarr;</a>
                 </div>
@@ -49,6 +55,7 @@ function renderBooks(filteredBooks) {
                 <div class="book-card">
                     <div class="title">${escapeHtml(book.title)}</div>
                     <div class="author">${escapeHtml(book.author)}</div>
+                    ${tagsHtml}
                     <a href="${escapeHtml(book.url)}" class="link" target="_blank" rel="noopener">View</a>
                 </div>
             `;
@@ -60,10 +67,12 @@ function filterBooks(query) {
     let result = books;
     if (query) {
         const lower = query.toLowerCase();
-        result = books.filter(book =>
-            book.title.toLowerCase().includes(lower) ||
-            book.author.toLowerCase().includes(lower)
-        );
+        result = books.filter(book => {
+            const titleMatch = book.title.toLowerCase().includes(lower);
+            const authorMatch = book.author.toLowerCase().includes(lower);
+            const tagMatch = book.tags && book.tags.some(tag => tag.toLowerCase().includes(lower));
+            return titleMatch || authorMatch || tagMatch;
+        });
     }
     return isReversed ? [...result].reverse() : result;
 }
