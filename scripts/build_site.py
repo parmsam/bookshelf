@@ -17,27 +17,48 @@ def parse_books(readme_path: Path) -> list[dict]:
     content = readme_path.read_text()
     books = []
 
-    pattern = r'^\s*-\s*\[(.+?)\]\((.+?)\)\s*$'
+    # Pattern for anchor tag format with optional hashtags
+    anchor_pattern = r'^\s*-\s*<a href="(.+?)">(.+?)</a>\s*((?:#\w+\s*)*)\s*$'
+    # Pattern for markdown link format (for backwards compatibility)
+    markdown_pattern = r'^\s*-\s*\[(.+?)\]\((.+?)\)\s*((?:#\w+\s*)*)\s*$'
 
     for line in content.split('\n'):
-        match = re.match(pattern, line)
+        # Try anchor tag format first
+        match = re.match(anchor_pattern, line)
         if match:
-            full_text = match.group(1)
-            url = match.group(2)
-
-            if ' by ' in full_text:
-                parts = full_text.rsplit(' by ', 1)
-                title = parts[0]
-                author = parts[1]
+            url = match.group(1)
+            full_text = match.group(2)
+            tags_str = match.group(3).strip()
+        else:
+            # Fall back to markdown format
+            match = re.match(markdown_pattern, line)
+            if match:
+                full_text = match.group(1)
+                url = match.group(2)
+                tags_str = match.group(3).strip()
             else:
-                title = full_text
-                author = 'Unknown'
+                continue
 
-            books.append({
-                'title': title,
-                'author': author,
-                'url': url
-            })
+        # Parse title and author
+        if ' by ' in full_text:
+            parts = full_text.rsplit(' by ', 1)
+            title = parts[0]
+            author = parts[1]
+        else:
+            title = full_text
+            author = 'Unknown'
+
+        # Parse tags
+        tags = []
+        if tags_str:
+            tags = [tag.strip('#') for tag in tags_str.split() if tag.startswith('#')]
+
+        books.append({
+            'title': title,
+            'author': author,
+            'url': url,
+            'tags': tags
+        })
 
     return books
 
@@ -61,7 +82,7 @@ def generate_html(books: list[dict]) -> str:
                         Input(
                             type="text",
                             id="search",
-                            placeholder="Search by title or author...",
+                            placeholder="Search by title, author, or tags...",
                             autocomplete="off"
                         ),
                         cls="search-box"
