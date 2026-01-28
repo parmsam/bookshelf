@@ -82,7 +82,7 @@ def generate_html(books: list[dict]) -> str:
                         Input(
                             type="text",
                             id="search",
-                            placeholder="Search by title or author...",
+                            placeholder="Search by title, author, or tags...",
                             autocomplete="off"
                         ),
                         cls="search-box"

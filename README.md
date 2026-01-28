@@ -37,7 +37,7 @@ Here's a list of books that I have read and recommend:
 - <a href="https://en.wikipedia.org/wiki/AI_Snake_Oil">AI Snake Oil by Arvind Narayanan</a> #AI #Technology #CriticalThinking
 - <a href="https://en.wikipedia.org/wiki/If_Anyone_Builds_It,_Everyone_Dies">If Anyone Builds It, Everyone Dies by Eliezer Yudkowsky and Nate Soares</a> #AI #Safety #Philosophy
 - <a href="https://en.wikipedia.org/wiki/How_to_Solve_It">How to Solve It by George Pólya</a> #Mathematics #ProblemSolving #Education
-- <a href="https://us.macmillan.com/books/9781250286338/thefourthconsort/">The Fourth Consor by Edward Ashton</a> #Fiction #SciFi #Mystery
+- <a href="https://us.macmillan.com/books/9781250286338/thefourthconsort/">The Fourth Consort by Edward Ashton</a> #Fiction #SciFi #Mystery
 - <a href="https://www.penguinrandomhouse.com/books/741805/co-intelligence-by-ethan-mollick/">Co-Intelligence: Living and Working with AI by Ethan Mollick</a> #AI #Technology #Business
 - <a href="https://en.wikipedia.org/wiki/A_Drop_of_Corruption">A Drop of Corruption by Robert Jackson Bennett</a> #Fiction #Fantasy #Mystery
 - <a href="https://www.amazon.com/Think-About-Money-Jonathan-Clements/dp/1523770813">How to Think About Money by Jonathan Clements</a> #Finance #PersonalFinance #Philosophy
