@@ -49,3 +49,4 @@ Here's a list of books that I have read and recommend:
 - [The Triple Package by Amy Chua and Jed Rubenfeld](https://en.wikipedia.org/wiki/The_Triple_Package) #Psychology #Sociology #Success
 - [HBR Guide to Being a Great Boss by Harvard Business Review](https://www.amazon.com/HBR-Guide-Being-Great-Boss/dp/1647822343) #Leadership #Management #Business
 - [Managing Humans by Michael Lopp](https://www.amazon.com/Managing-Humans-Humorous-Software-Engineering/dp/1484271157/) #Leadership #Management #SoftwareEngineering
+- [Wait, I'm the Boss?!? by Peter Economy](https://www.amazon.com/Wait-Im-Boss-Essential-Managers/dp/1632651645) #Leadership #Management #Business
